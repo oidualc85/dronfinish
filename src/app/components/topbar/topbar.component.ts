@@ -5,10 +5,9 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { StickyScrollDirective } from '@core/directives/sticky-scroll.directive';
 import { MobileMenuComponent } from "../mobile-menu/mobile-menu.component";
-
+                                                                                                                                                                                                               
 @Component({
     selector: 'app-topbar',
-    standalone: true, // Asegúrate de que es standalone
     imports: [MobileMenuComponent, CommonModule, StickyScrollDirective, RouterLink],
     templateUrl: './topbar.component.html',
     styles: ``
@@ -24,13 +23,13 @@ export class TopbarComponent {
     @Input() logo!: string;
     @Input() isAlert?: boolean;
 
-    // REEMPLAZA LOS ARREGLOS ANTERIORES POR ESTE
+
     menuItems = [
       { title: 'Inicio', fragment: 'hero' },
-      { title: 'Nosotros', fragment: 'about-4' },
-      { title: 'Servicios', fragment: 'app-service-3' },
-      { title: 'Planes', fragment: 'pricing' },
+      { title: 'Problema/solucion', fragment: 'about-4' },
+      { title: '¿Cómo funciona?', fragment: 'app-service-3' },
+      { title: 'Beneficios', fragment: 'pricing' },
       { title: 'FAQ', fragment: 'app-faq-3' },
-      { title: 'Testimonios', fragment: 'testimonials' }
+      { title: 'Galeria', fragment: 'testimonials' },
     ];
 }

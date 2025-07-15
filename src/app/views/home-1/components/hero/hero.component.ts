@@ -11,9 +11,9 @@ import { CarouselModule, type OwlOptions } from 'ngx-owl-carousel-o';
 export class HeroComponent {
 
     slides = [
-        { img: 'assets/img/bg/header-img4.png' },
-        { img: 'assets/img/bg/header-img2.png' },
-        { img: 'assets/img/bg/header-img3.png' }
+        { img: 'assets/img/bg/herotemp1.webp' },
+        { img: 'assets/img/bg/herotemp2.jpg' },
+        { img: 'assets/img/bg/herotemp3.jpeg' }
     ];
 
     carouselOptions: OwlOptions = {

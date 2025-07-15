@@ -10,7 +10,7 @@ import { TopbarComponent } from '@app/components/topbar/topbar.component';
     selector: 'app-layout',
     imports: [LoaderComponent, ScrollToTopComponent, TopbarComponent, RouterOutlet, FooterComponent, CtaComponent],
     templateUrl: './layout.component.html',
-    styles: ``
+    styles: ''
 })
 export class LayoutComponent {
 }
