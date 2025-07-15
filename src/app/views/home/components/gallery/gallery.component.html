@@ -1,0 +1,49 @@
+<div class="gallery-section-area sp1">
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="row align-items-center">
+      <div class="col-lg-7 m-auto">
+        <div class="gallery-header-area heading4 text-center">
+          <h5 data-aos="fade-left" data-aos-duration="800">Galería</h5>
+          <h2 class="tg-element-title">Nuestros Trabajos</h2>
+          <p data-aos="fade-left" data-aos-duration="1000">
+            Mira cómo transformamos espacios con pintura aplicada por drones.
+            <br class="d-lg-block d-none" />
+            Precisión, velocidad y resultados impecables.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="row justify-content-center mt-40">
+      <div class="col-lg-10" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="gallery-carousel-wrapper position-relative">
+          <!-- ↑ El wrapper se vuelve relative; las flechas absolutas toman esta referencia -->
+
+          <ngx-slick-carousel
+            #slickModal="slick-carousel"
+            class="gallery-slider"
+            [config]="sliderConfig"
+          >
+            <div *ngFor="let img of images" ngxSlickItem class="gallery-slide">
+              <img [src]="img" alt="Imagen de galería" />
+            </div>
+          </ngx-slick-carousel>
+
+          <!-- Flechas -->
+          <div class="gallery-prev-arrow slider-arrow">
+            <button (click)="slickModal.slickPrev()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+          <div class="gallery-next-arrow slider-arrow">
+            <button (click)="slickModal.slickNext()">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

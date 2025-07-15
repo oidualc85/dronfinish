@@ -30,6 +30,6 @@ export class TopbarComponent {
       { title: '¿Cómo funciona?', fragment: 'app-service-3' },
       { title: 'Beneficios', fragment: 'pricing' },
       { title: 'FAQ', fragment: 'app-faq-3' },
-      { title: 'Galeria', fragment: 'testimonials' },
+      { title: 'Galería', fragment: 'gallery' },
     ];
 }

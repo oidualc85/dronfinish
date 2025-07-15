@@ -55,6 +55,10 @@ import { Service4Component }        from '../demo/home-4/components/service-4/se
 import { Team4Component }           from '../demo/home-4/components/team-4/team-4.component';
 import { Testimonial4Component }    from '../demo/home-4/components/testimonial-4/testimonial-4.component';
 
+
+import { GalleryComponent } from './components/gallery/gallery.component';
+
+
 @Component({
   selector   : 'app-home',
   standalone : true,
@@ -106,6 +110,8 @@ import { Testimonial4Component }    from '../demo/home-4/components/testimonial-
     Service4Component,
     Team4Component,
     Testimonial4Component,
+
+    GalleryComponent
   ],
 })
 export class HomeComponent {}

@@ -6,7 +6,7 @@ export const services: ServiceType[] = [
     aos: 'flip-left',
     duration: 800,
     image: 'assets/img/all-images/cf1.png',
-    icon: 'assets/img/icons/service-icons1.svg',
+    icon: 'assets/img/icons/analisis.png',
     title: 'Evaluamos el sitio sin necesidad de andamios',
     description: 'Usamos imágenes o visitas rápidas para entender tu necesidad y superficie a cubrir, incluso en zonas elevadas o de difícil acceso.'
   },
@@ -15,7 +15,7 @@ export const services: ServiceType[] = [
     aos: 'flip-up',
     duration: 1000,
     image: 'assets/img/all-images/cf2.png',
-    icon: 'assets/img/icons/service-icons2.svg',
+    icon: 'assets/img/icons/sistema-operacional.png',
     title: 'Volamos y pintamos con precisión',
     description: 'Configuramos los drones para aplicar la pintura de forma pareja, rápida y sin desperdicio. Todo desde el aire, sin interrupciones.'
   },
@@ -24,7 +24,7 @@ export const services: ServiceType[] = [
     aos: 'flip-right',
     duration: 1200,
     image: 'assets/img/all-images/cf3.png',
-    icon: 'assets/img/icons/service-icons3.svg',
+    icon: 'assets/img/icons/proyecto.png',
     title: 'Verificamos el trabajo terminado',
     description: 'Revisamos que todo esté pintado correctamente y te entregamos resultados listos para usar, sin demoras ni riesgos.'
   }
