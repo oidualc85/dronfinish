@@ -57,6 +57,7 @@ import { Testimonial4Component }    from '../demo/home-4/components/testimonial-
 
 
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { BeneficiosComponent } from './components/beneficios/beneficios.component';
 
 
 @Component({
@@ -111,7 +112,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     Team4Component,
     Testimonial4Component,
 
-    GalleryComponent
+    GalleryComponent,
+    BeneficiosComponent
   ],
 })
 export class HomeComponent {}

@@ -26,9 +26,9 @@ export class TopbarComponent {
 
     menuItems = [
       { title: 'Inicio', fragment: 'hero' },
-      { title: 'Problema/solucion', fragment: 'about-4' },
+      { title: 'Solución', fragment: 'about-4' },
       { title: '¿Cómo funciona?', fragment: 'app-service-3' },
-      { title: 'Beneficios', fragment: 'pricing' },
+      { title: 'Beneficios', fragment: 'beneficios' },
       { title: 'FAQ', fragment: 'app-faq-3' },
       { title: 'Galería', fragment: 'gallery' },
     ];

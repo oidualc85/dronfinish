@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SlickCarouselModule  } from 'ngx-slick-carousel';
+import { NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 
 @Component({
   selector: 'app-gallery',
-  imports: [CommonModule, SlickCarouselModule],
+
+  imports: [CommonModule, NgxMasonryModule], 
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })
@@ -19,16 +20,10 @@ export class GalleryComponent {
     'assets/img/all-images/g6.png'
   ];
 
-  sliderConfig = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    infinite: true,
-    prevArrow: '.gallery-prev-arrow',
-    nextArrow: '.gallery-next-arrow',
-  };
 
+  public masonryOptions: NgxMasonryOptions = {
+    gutter: 20, // Espacio entre ítems en píxeles
+    itemSelector: '.masonry-item',
+    percentPosition: true,
+  };
 }

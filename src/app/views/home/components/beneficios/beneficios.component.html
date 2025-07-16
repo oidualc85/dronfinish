@@ -1,0 +1,45 @@
+<div class="compare-palns-area sp2">
+  <div class="container">
+
+    <!-- Cabecera -->
+    <div class="row">
+      <div class="col-lg-8 m-auto">
+        <div class="compare-plan-header text-center heading2">
+          <h5 data-aos="fade-up" data-aos-duration="800">Beneficios</h5>
+          <h2 class="tg-element-title">Resultados que marcan la diferencia</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            Descubre por qué la pintura con drones supera la metodología tradicional
+            en seguridad, velocidad y coste.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjetas -->
+    <div class="row">
+      <div
+        *ngFor="let b of beneficios; index as i"
+        class="col-lg-4 col-md-6"
+        [attr.data-aos]="i === 1 ? 'flip-up' : i % 2 === 0 ? 'flip-left' : 'flip-right'"
+        [attr.data-aos-duration]="800 + i * 200"
+      >
+        <!-- MISMA CLASE que usa pricing-plans -->
+        <div class="pricing-card text-center">
+          <div class="pc-header mb-30">
+            <img [src]="b.icono" [alt]="b.titulo" class="mb-15" />
+            <h3 class="mb-10">{{ b.titulo }}</h3>
+            <p>{{ b.resumen }}</p>
+          </div>
+
+          <ul class="pc-features list-unstyled">
+            <li *ngFor="let p of b.puntos">
+              <img src="assets/img/icons/check1.svg" class="me-2" alt="✔" />
+              {{ p }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
