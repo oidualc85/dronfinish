@@ -3,7 +3,7 @@
       <div class="col-12">
         <div class="mobile-header-elements">
           <div class="mobile-logo">
-            <a routerLink="/home-1"><img [src]="mobileLogo" alt=""></a>
+            <a routerLink="/home-1"><img [src]="mobileLogo"  style="height: 50px; width: auto;" alt=""></a>
           </div>
           <div class="mobile-nav-icon dots-menu" (click)="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
@@ -16,7 +16,7 @@
   <div class="mobile-sidebar {{mobileSidebarClass}}" [ngClass]="{ 'mobile-menu-active': isMenuOpen }">
     <div class="logosicon-area">
       <div class="logos">
-        <img [src]="mobileLogo" alt="">
+        <img [src]="mobileLogo" style="height: 50px; width: auto;" alt="">
       </div>
       <div class="menu-close" (click)="closeMenu()">
         <i class="fa-solid fa-xmark"></i>
