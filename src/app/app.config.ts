@@ -11,16 +11,16 @@ export const appConfig: ApplicationConfig = {
     providers: [
         provideZoneChangeDetection({ eventCoalescing: true }),
 
-        // MODIFICA ESTA LÍNEA PARA AÑADIR LA NUEVA FUNCIÓN
+
         provideRouter(
             routes,
             withInMemoryScrolling({
-                scrollPositionRestoration: 'enabled', // Opcional: restaura el scroll al usar los botones de atrás/adelante del navegador
-                anchorScrolling: 'enabled'           // ¡Esta es la clave! Habilita el desplazamiento a anclajes.
+                scrollPositionRestoration: 'enabled', 
+                anchorScrolling: 'enabled'           
             })
         ),
         
-        // El resto de tus providers se mantienen igual
+
         provideAnimations(),
         {
             provide: IMAGE_CONFIG,
