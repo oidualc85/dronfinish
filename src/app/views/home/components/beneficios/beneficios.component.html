@@ -14,21 +14,16 @@
       </div>
     </div>
 
-    <div class="row">
-      <div
-        *ngFor="let b of beneficios; index as i"
-        class="col-lg-4 col-md-6"
-        [attr.data-aos]="i === 1 ? 'flip-up' : i % 2 === 0 ? 'flip-left' : 'flip-right'"
-        [attr.data-aos-duration]="800 + i * 200"
+    <div class="row" >
+      <div *ngFor="let b of beneficios; index as i" class="col-lg-4 col-md-6" [attr.data-aos]="i === 1 ? 'flip-up' : i % 2 === 0 ? 'flip-left' : 'flip-right'" [attr.data-aos-duration]="800 + i * 200"
       >
-        <div class="service2-author-boxarea" style="text-align: center;">
-          <div class="service-content">
-            <h3 class="mb-10" style="margin-bottom: 10px;">{{ b.titulo }}</h3>
+        <div class="single-pricing-area" style=" background-color: #ffffff;">
+          <div class="service-content" >
+            <h3 class="mb-10" style="margin-bottom: 10px; ">{{ b.titulo }}</h3>
             <p>{{ b.resumen }}</p>
-          </div>
-
-          <ul class="pc-features list-unstyled mt-3">
-            <li *ngFor="let p of b.puntos">
+          </div> 
+          <ul class="pc-features list-unstyled mt-3"  >
+            <li *ngFor="let p of b.puntos"  >
               <img src="assets/img/icons/check2.svg" class="me-2" alt="✔" />
               {{ p }}
             </li>
