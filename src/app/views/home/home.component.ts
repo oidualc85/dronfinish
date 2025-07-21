@@ -59,6 +59,8 @@ import { Testimonial4Component }    from '../demo/home-4/components/testimonial-
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { BeneficiosComponent } from './components/beneficios/beneficios.component';
 
+import { EstadoComponent } from './components/estado/estado.component';
+
 
 @Component({
   selector   : 'app-home',
@@ -113,19 +115,9 @@ import { BeneficiosComponent } from './components/beneficios/beneficios.componen
     Testimonial4Component,
 
     GalleryComponent,
-    BeneficiosComponent
+    BeneficiosComponent,
+    EstadoComponent
   ],
 })
 export class HomeComponent {}
 
-/* -----------------------------------------------------------------
-   ¿Y AHORA QUÉ?
-   -----------------------------------------------------------------
-   1.  Abre `home.component.html` y comienza a usar las etiquetas
-       de los bloques que quieras (por ejemplo: <app-hero2></app-hero2>).
-   2.  Si algún componente no lo usas, elimínalo tanto del HTML como
-       de la lista `imports` para que no se cargue en el bundle final.
-   3.  ¿Necesitas también los *home-single-X*? Dímelo y te preparo
-       los imports; habrá que usar alias porque algunos nombres de
-       clase se repiten.
------------------------------------------------------------------- */
