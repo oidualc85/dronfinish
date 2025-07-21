@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
             .subscribe(data => {
                 if (data['title']) {
                     this.titleService.setTitle(data['title'] +
-                        ' | Current - Electricity Services');
+                        ' | Dron Finish');
                 }
             });
     }

@@ -25,11 +25,11 @@ export class TopbarComponent {
 
 
     menuItems = [
-      { title: 'Inicio', fragment: 'hero' },
-      { title: 'Problema', fragment: 'about-4' },
-      { title: '¿Cómo funciona?', fragment: 'app-service-3' },
-      { title: 'Beneficios', fragment: 'app-beneficios' },
-      { title: 'FAQ', fragment: 'app-faq-3' },
-      { title: 'Galería', fragment: 'gallery' },
+      { title: 'Inicio', fragment: 'inicio' },
+      { title: 'Problema', fragment: 'problemas-solucion' },
+      { title: '¿Cómo funciona?', fragment: 'como-funciona' },
+      { title: 'Beneficios', fragment: 'beneficios' },
+      { title: 'FAQ', fragment: 'preguntas-frecuentes' },
+      { title: 'Galería', fragment: 'galeria' },
     ];
 }
